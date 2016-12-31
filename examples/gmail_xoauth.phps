@@ -29,7 +29,7 @@ $mail->SMTPDebug = 0;
 $mail->Debugoutput = 'html';
 
 //Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'smtp.comcast.net';
 
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 $mail->Port = 587;
@@ -44,7 +44,7 @@ $mail->SMTPAuth = true;
 $mail->AuthType = 'XOAUTH2';
 
 //User Email to use for SMTP authentication - Use the same Email used in Google Developer Console
-$mail->oauthUserEmail = "someone@gmail.com";
+$mail->oauthUserEmail = "dom7.store@gmail.com";
 
 //Obtained From Google Developer Console
 $mail->oauthClientId = "RANDOMCHARS-----duv1n2.apps.googleusercontent.com";
@@ -59,10 +59,10 @@ $mail->oauthRefreshToken = "RANDOMCHARS-----DWxgOvPT003r-yFUV49TQYag7_Aod7y0";
 
 //Set who the message is to be sent from
 //For gmail, this generally needs to be the same as the user you logged in as
-$mail->setFrom('from@example.com', 'First Last');
+$mail->setFrom('dom7.store@gmail.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('whoto@example.com', 'John Doe');
+$mail->addAddress('dom7.store@gmail.com', 'John Doe');
 
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
